@@ -72,10 +72,10 @@ export function HeroSection() {
         <div className="container-custom text-center text-white">
           <Reveal>
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-none tracking-tight mb-6">
-              <AnimatedText text="Design furniture for" delay={0.5} />
+              <AnimatedText text="Comfortable Living" delay={0.5} />
               <br />
               <span className="italic font-light">
-                <AnimatedText text="spaces that breathe." delay={1.1} />
+                <AnimatedText text="right where you need it." delay={1.1} />
               </span>
             </h1>
           </Reveal>
