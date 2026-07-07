@@ -36,9 +36,9 @@ export function NewsletterSection() {
             <BlurPanel className="p-4 sm:p-6 md:p-8 lg:p-12 bg-white/40 backdrop-blur-md grain-texture">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
-                  <AnimatedText text="Stay ahead of " delay={0.2} />
+                  <AnimatedText text="Find Your " delay={0.2} />
                   <span className="italic font-light">
-                    <AnimatedText text="quiet luxury." delay={0.5} />
+                    <AnimatedText text="Perfect Stay." delay={0.5} />
                   </span>
                 </h2>
                 <p className="text-sm md:text-base text-neutral-600">
@@ -60,9 +60,8 @@ export function NewsletterSection() {
                         setIsValid(true)
                       }}
                       placeholder="Enter your email address"
-                      className={`w-full pl-12 pr-4 py-4 bg-white/60 backdrop-blur-sm border rounded-full text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent transition-all duration-200 ${
-                        !isValid ? "border-red-300 focus:ring-red-500" : "border-neutral-200"
-                      }`}
+                      className={`w-full pl-12 pr-4 py-4 bg-white/60 backdrop-blur-sm border rounded-full text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent transition-all duration-200 ${!isValid ? "border-red-300 focus:ring-red-500" : "border-neutral-200"
+                        }`}
                     />
                   </div>
 
