@@ -22,6 +22,7 @@ export function Header() {
   const navLinks = [
     { href: "/", label: "Home", activeMatch: (path) => path === "/" },
     { href: "/about", label: "About Us", activeMatch: (path) => path === "/about" },
+    { href: "/house-rules", label: "House Rules", activeMatch: (path) => path === "/house-rules" },
   ]
 
   const isActive = (link) => link.activeMatch(pathname)
