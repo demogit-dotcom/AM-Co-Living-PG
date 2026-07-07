@@ -14,7 +14,7 @@ const rules = [
       "Please maintain a peaceful atmosphere, especially between 10:00 PM and 7:00 AM.",
       "Avoid loud music, shouting, or activities that may disturb other residents.",
     ],
-    icon: "🤫",
+    icon: "✅",
   },
   {
     title: "Visitor Policy",
