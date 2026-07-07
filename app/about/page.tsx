@@ -28,11 +28,11 @@ export default function AboutPage() {
         <section className="py-16 md:py-24 lg:py-32">
           <div className="container-custom">
             <div className="text-center mb-12 md:mb-16">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6">
-                About AM Co-Living
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f2703b] mb-6" style={{ fontSize: "48px" }}>
+                About AM Co-Living PG
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
-                A Place That Feels Like Home
+                A Place That Feels Like Home!
               </p>
             </div>
           </div>
@@ -43,14 +43,14 @@ export default function AboutPage() {
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
                   Our Mission
                 </h2>
                 <div className="space-y-6">
-                  <p className="text-base md:text-lg text-neutral-600 leading-relaxed">
-                    At AM Co-Living, we believe that a great living experience goes beyond just providing a room. We offer safe, comfortable, and fully furnished accommodation designed to make students and working professionals feel at home from the very first day.
+                  <p className="text-base md:text-lg text-[#120000] leading-relaxed">
+                    At AM Co-Living PG, we believe that a great living experience goes beyond just providing a room. We offer safe, comfortable, and fully furnished accommodation designed to make students and working professionals feel at home from the very first day.
                   </p>
-                  <p className="text-base md:text-lg text-neutral-600 leading-relaxed">
+                  <p className="text-base md:text-lg text-black leading-relaxed">
                     Our thoughtfully designed spaces combine modern amenities with a welcoming community, creating the perfect environment to live, work, study, and relax. Whether you're relocating for education or your career, we ensure a hassle-free stay with everything you need under one roof.
                   </p>
                 </div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
                   src="/about-pg-building.jpg"
                   alt="AM Co-Living modern accommodation building with warm lighting"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-xl"
                   priority
                 />
               </div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
         <section className="py-16 md:py-24 lg:py-32">
           <div className="container-custom">
             <div className="mb-16 text-center">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-4">
                 Why Choose AM Co-Living?
               </h2>
               <p className="text-base md:text-lg text-neutral-600 max-w-3xl mx-auto">
@@ -94,7 +94,7 @@ export default function AboutPage() {
                         </svg>
                       </div>
                     </div>
-                    <p className="text-base font-medium text-neutral-900">{feature}</p>
+                    <p className="text-sm font-medium text-[#e51a1a]">{feature}</p>
                   </div>
                 </div>
               ))}
@@ -106,7 +106,7 @@ export default function AboutPage() {
         <section className="py-16 md:py-24 lg:py-32 bg-neutral-50">
           <div className="container-custom">
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
                 A Community You'll Love
               </h2>
               <p className="text-base md:text-lg text-neutral-600 leading-relaxed">
