@@ -38,13 +38,13 @@ export function Header() {
       transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-12 lg:h-16">
+        <div className="flex items-center justify-between h-14 md:h-16">
           {/* Logo - Left Aligned */}
           <motion.div className="flex-shrink-0" whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
             <Link
               href="/"
               className={cn(
-                "text-lg lg:text-xl font-semibold tracking-tight transition-colors",
+                "text-base md:text-lg lg:text-xl font-semibold tracking-tight transition-colors",
                 isScrolled ? "text-neutral-900 hover:text-neutral-700" : "text-white hover:text-white/80",
               )}
               aria-label="AM Co-Living PG Home"
@@ -54,13 +54,13 @@ export function Header() {
           </motion.div>
 
           {/* Navigation Links - Right Aligned */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-4 md:gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors duration-200",
+                  "text-xs md:text-sm font-medium transition-colors duration-200",
                   isActive(link)
                     ? isScrolled
                       ? "text-neutral-900 border-b-2 border-neutral-900"
