@@ -7,16 +7,54 @@ export const metadata = {
   description: "Learn about AM Co-Living - a place that feels like home for students and working professionals with fully furnished rooms and modern amenities.",
 }
 
+interface Feature {
+  title: string
+  icon: string
+  description: string
+}
+
 export default function AboutPage() {
-  const features = [
-    "Fully Furnished & Move-in Ready Rooms",
-    "High-Speed Wi-Fi",
-    "Nutritious Home-Style Meals",
-    "24/7 Security & CCTV Surveillance",
-    "Daily Housekeeping",
-    "Prime Location with Easy Metro Access",
-    "Clean & Hygienic Living Spaces",
-    "Friendly & Responsive Management",
+  const features: Feature[] = [
+    {
+      title: "Fully Furnished & Move-in Ready Rooms",
+      icon: "🛏️",
+      description: "Complete with all essentials for immediate occupancy"
+    },
+    {
+      title: "High-Speed Wi-Fi",
+      icon: "📶",
+      description: "Fast and reliable internet connectivity"
+    },
+    {
+      title: "Nutritious Home-Style Meals",
+      icon: "🍽️",
+      description: "Healthy and delicious meals prepared fresh daily"
+    },
+    {
+      title: "24/7 Security & CCTV Surveillance",
+      icon: "🔒",
+      description: "Round-the-clock safety and monitoring"
+    },
+    {
+      title: "Daily Housekeeping",
+      icon: "🧹",
+      description: "Professional cleaning and maintenance staff"
+    },
+    {
+      title: "Prime Location with Easy Metro Access",
+      icon: "🚇",
+      description: "Convenient transportation and connectivity"
+    },
+    {
+      title: "Clean & Hygienic Living Spaces",
+      icon: "✨",
+      description: "Spotless rooms and common areas"
+    },
+    {
+      title: "Friendly & Responsive Management",
+      icon: "👥",
+      description: "Always available to help and support"
+    },
   ]
 
   return (
@@ -83,18 +121,28 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 font-sans">
               {features.map((feature) => (
                 <div
-                  key={feature}
-                  className="p-6 rounded-lg bg-neutral-50 border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300"
+                  key={feature.title}
+                  className="group p-6 rounded-xl bg-white border border-neutral-200 hover:border-[#f2703b] hover:shadow-2xl hover:shadow-orange-200/50 transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-8 w-8 rounded-md bg-neutral-900 text-white">
-                        <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
+                  <div className="flex flex-col h-full">
+                    <div className="mb-4">
+                      <div className="text-4xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
+                        {feature.icon}
                       </div>
+                      <h3 className="text-sm font-semibold text-neutral-900 leading-snug mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-xs text-neutral-600 leading-relaxed">
+                        {feature.description}
+                      </p>
                     </div>
-                    <p className="text-sm font-medium text-[#e51a1a]">{feature}</p>
+                    <div className="flex items-center mt-auto pt-4 border-t border-neutral-100">
+                      <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-[#f2703b]/10 text-[#f2703b]">
+                        <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}
