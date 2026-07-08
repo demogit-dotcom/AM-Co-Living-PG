@@ -209,8 +209,8 @@ export default function HouseRulesPage() {
             <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 mb-6">
               Thank You for Being Part of Our Community
             </h2>
-            <p className="text-base md:text-lg text-neutral-600 leading-relaxed text-justify">
-              We appreciate your cooperation in helping us maintain a safe, clean, secure, and welcoming community for everyone. These house rules are designed to ensure that all residents enjoy a comfortable and harmonious living experience. Together, let's make AM Co-Living a place you'll truly enjoy calling home.
+            <p className="text-base md:text-lg text-neutral-600 leading-relaxed text-justify font-sans">
+              We appreciate your co-operation in helping us maintain a safe, clean, secure, and welcoming community for everyone. These house rules are designed to ensure that all residents enjoy a comfortable and harmonious living experience. Together, let's make AM Co-Living PG a place you'll truly enjoy calling home.
             </p>
           </div>
         </div>
