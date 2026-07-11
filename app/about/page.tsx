@@ -157,7 +157,7 @@ export default function AboutPage() {
         <section className="py-16 md:py-24 lg:py-32 bg-neutral-50">
           <div className="container-custom">
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
                 A Community You'll Love ❤️
               </h2>
               <p className="text-base md:text-lg text-[#040002] leading-relaxed text-justify font-sans">
