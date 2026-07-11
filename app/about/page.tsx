@@ -41,7 +41,7 @@ export default function AboutPage() {
       description: "Professional cleaning and maintenance staff"
     },
     {
-      title: "Prime Location with Easy Metro Access",
+      title: "Prime Location with Easy Metro/ Bus Access with 200 mtr.",
       icon: "🚇",
       description: "Convenient transportation and connectivity"
     },
@@ -66,7 +66,7 @@ export default function AboutPage() {
         <section className="py-16 md:py-24 lg:py-32">
           <div className="container-custom">
             <div className="text-center mb-12 md:mb-16">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f2703b] mb-6" style={{ fontSize: "36px" }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f56b35] mb-6" style={{ fontSize: "36px" }}>
                 About AM Co-Living PG
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
