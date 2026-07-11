@@ -1,105 +1,155 @@
 "use client"
 import { motion } from "framer-motion"
-import { Instagram, Twitter, Facebook, ArrowUpRight } from "lucide-react"
+import { Instagram, Facebook, Linkedin, Youtube, Mail, Phone } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
-  const footerLinks = {
+  const navigationLinks = [
+    { name: "Apartments", href: "#" },
+    { name: "About Us", href: "#" },
+    { name: "Amenities", href: "#" },
+    { name: "FAQs", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Partner with us", href: "#" },
+  ]
 
-    PG: [
-      { name: "About", href: "#" },
-      { name: "House Rules", href: "#" },
-    ],
-  }
+  const tenantLinks = [
+    { name: "House Rules", href: "#" },
+    { name: "Privacy Policies", href: "#" },
+  ]
 
   const socialLinks = [
     { name: "Instagram", icon: Instagram, href: "#" },
+    { name: "Facebook", icon: Facebook, href: "#" },
+    { name: "LinkedIn", icon: Linkedin, href: "#" },
+    { name: "YouTube", icon: Youtube, href: "#" },
   ]
 
   return (
-    <footer className="bg-white/[0.02] border-t border-white/[0.02]">
-      <div className="container-custom py-16 lg:py-20">
+    <footer className="bg-gradient-to-r from-[rgb(255,125,0)] to-[rgb(255,140,20)]" style={{ backgroundColor: 'rgb(255, 125, 0)' }}>
+      <div className="container-custom py-16 lg:py-24">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 md:gap-12 lg:gap-16 mb-8 sm:mb-12">
-          {/* Brand Section */}
-          <div className="lg:col-span-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* Brand and Contact Section */}
+          <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="mb-4 text-2xl font-bold font-sans" style={{ fontFamily: '"Geist", sans-serif', color: 'rgb(255, 125, 0)' }}>AM Co-Living PG</h3>
-              <p className="text-sm text-neutral-600 mb-6 leading-relaxed font-sans" style={{ fontFamily: '"Geist", sans-serif' }}>
-                Happiness Like A Home. Safe, comfortable, and fully furnished accommodation for students and working professionals.
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-xl font-bold" style={{ color: 'rgb(255, 125, 0)' }}>AM</span>
+                </div>
+                <h2 className="text-2xl font-bold text-white" style={{ fontFamily: '"Geist", sans-serif' }}>AM Co-Living PG</h2>
+              </div>
+              <p className="text-white/90 text-sm mb-8 leading-relaxed">
+                Fully furnished apartments designed for students and working professionals.
               </p>
-              <div className="flex space-x-4">
-                {socialLinks.map((social) => (
-                  <motion.a
-                    key={social.name}
-                    href={social.href}
-                    className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 transition-all duration-200"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <social.icon size={18} />
-                    <span className="sr-only">{social.name}</span>
-                  </motion.a>
-                ))}
+              
+              <div className="space-y-3">
+                <h3 className="text-white font-semibold text-sm mb-4">Contact</h3>
+                <a href="mailto:contact@amcoliving.com" className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group">
+                  <Mail size={18} />
+                  <span className="text-sm">contact@amcoliving.com</span>
+                </a>
+                <a href="tel:+919876543210" className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group">
+                  <Phone size={18} />
+                  <span className="text-sm">+91 9876543210</span>
+                </a>
               </div>
             </motion.div>
           </div>
 
-          {/* Links Sections */}
-          <div className="lg:col-span-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 lg:gap-12" style={{ fontFamily: '"Geist", sans-serif' }}>
-              {Object.entries(footerLinks).map(([category, links], index) => (
-                <motion.div
-                  key={category}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+          {/* Navigation Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <h4 className="font-semibold text-white mb-6 text-lg">Navigation</h4>
+            <ul className="space-y-3">
+              {navigationLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-white/80 hover:text-white transition-colors text-sm"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* For Tenants */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <h4 className="font-semibold text-white mb-6 text-lg">For Tenants</h4>
+            <ul className="space-y-3">
+              {tenantLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-white/80 hover:text-white transition-colors text-sm"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Socials */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <h4 className="font-semibold text-white mb-6 text-lg">Socials</h4>
+            <div className="flex flex-wrap gap-4">
+              {socialLinks.map((social) => (
+                <motion.a
+                  key={social.name}
+                  href={social.href}
+                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[rgb(255,125,0)] transition-all duration-200"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  title={social.name}
                 >
-                  <h4 className="font-semibold text-neutral-900 mb-4">{category === 'PG' ? 'AM Co-Living PG' : category}</h4>
-                  <ul className="space-y-3">
-                    {links.map((link) => (
-                      <li key={link.name}>
-                        <a
-                          href={link.href}
-                          className="text-neutral-600 hover:text-neutral-900 transition-colors duration-200 group flex items-center"
-                        >
-                          {link.name}
-                          <ArrowUpRight
-                            size={14}
-                            className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                          />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
+                  <social.icon size={18} />
+                </motion.a>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Bottom Section */}
+        {/* Brand Statement Section */}
         <motion.div
-          className="pt-8 pb-4 border-t border-neutral-200 flex justify-center items-center"
+          className="pt-12 lg:pt-16 border-t border-white/20"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-center">
-            <p style={{ color: '#181618' }}>&copy; {currentYear} AM Co-Living PG. All rights reserved.</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-8" style={{ fontFamily: '"Geist", sans-serif' }}>
+            AM Co-Living PG
+          </h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-white/80 text-center border-t border-white/20 pt-8">
+            <p>&copy; {currentYear} AM Co-Living PG. All rights reserved.</p>
             <div className="flex space-x-6">
-              <a href="#" className="hover:text-neutral-700 transition-colors">
+              <a href="#" className="hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-neutral-700 transition-colors">
+              <a href="#" className="hover:text-white transition-colors">
                 Terms of Service
               </a>
             </div>
