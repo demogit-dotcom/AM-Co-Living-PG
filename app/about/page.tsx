@@ -60,7 +60,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      
+
       <main className="min-h-screen bg-white pt-16">
         {/* Hero Section */}
         <section className="py-16 md:py-24 lg:py-32">
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 About AM Co-Living PG
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
-                A Place That Feels Like Home!
+                A Place That Feels Like Home Always!
               </p>
             </div>
           </div>
