@@ -9,6 +9,7 @@ export function Footer() {
 
     PG: [
       { name: "About", href: "#" },
+      { name: "House Rules", href: "#" },
     ],
   }
 
