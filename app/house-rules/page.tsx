@@ -57,7 +57,7 @@ const rules = [
   {
     title: "Smoking & Alcohol",
     items: [
-      "Smoking, alcohol consumption, and the use of prohibited substances are strictly prohibited anywhere within the premises unless explicitly approved by management.",
+      "Smoking, alcohol consumption, and the use of prohibited substances are strictly prohibited anywhere within the premises.",
     ],
     icon: "🚭",
   },
