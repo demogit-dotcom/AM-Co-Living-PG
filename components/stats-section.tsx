@@ -14,7 +14,7 @@ const stats: Stat[] = [
     label: "Happy Guests",
   },
   {
-    number: "17",
+    number: "4+",
     label: "Locations",
   },
   {
@@ -30,7 +30,7 @@ export function StatsSection() {
         <Reveal>
           <div
             className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 rounded-3xl p-8 md:p-12 lg:p-16"
-            style={{ backgroundColor: "rgb(255, 125, 0)" }}
+            style={{ backgroundColor: "rgb(255, 125, 0)", fontFamily: '"Work Sans", sans-serif' }}
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -43,6 +43,7 @@ export function StatsSection() {
               >
                 <motion.h3
                   className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3"
+                  style={{ fontFamily: '"Geist", sans-serif' }}
                   initial={{ scale: 0.8 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.15 }}
@@ -50,7 +51,7 @@ export function StatsSection() {
                 >
                   {stat.number}
                 </motion.h3>
-                <p className="text-lg md:text-xl font-semibold text-white">{stat.label}</p>
+                <p className="text-lg md:text-xl font-semibold text-white" style={{ fontFamily: '"Geist", sans-serif' }}>{stat.label}</p>
               </motion.div>
             ))}
           </div>
