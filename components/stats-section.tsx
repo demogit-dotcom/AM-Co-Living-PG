@@ -42,8 +42,8 @@ export function StatsSection() {
                 className="text-center"
               >
                 <motion.h3
-                  className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3"
-                  style={{ fontFamily: '"Geist", sans-serif' }}
+                  className="text-5xl md:text-6xl lg:text-7xl text-white mb-3"
+                  style={{ fontFamily: '"Geist", sans-serif', fontWeight: '400' }}
                   initial={{ scale: 0.8 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.15 }}
