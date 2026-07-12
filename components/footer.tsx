@@ -39,12 +39,7 @@ export function Footer() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-xl font-bold" style={{ color: 'rgb(255, 125, 0)' }}>AM</span>
-                </div>
-                <h2 className="text-2xl font-bold text-white" style={{ fontFamily: '"Geist", sans-serif' }}>AM Co-Living PG</h2>
-              </div>
+              <h2 className="text-2xl font-bold text-white mb-6" style={{ fontFamily: '"Geist", sans-serif' }}>AM Co-Living PG</h2>
               <p className="text-white/90 text-sm mb-8 leading-relaxed">
                 Fully furnished apartments designed for students and working professionals.
               </p>
