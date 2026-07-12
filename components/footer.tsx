@@ -40,7 +40,7 @@ export function Footer() {
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold text-white mb-6" style={{ fontFamily: '"Geist", sans-serif' }}>AM Co-Living PG</h2>
-              <p className="text-white/90 text-sm mb-8 leading-relaxed">
+              <p className="text-white/90 mb-8 leading-relaxed" style={{ fontSize: '16px' }}>
                 Fully furnished apartments designed for students and working professionals.
               </p>
               
@@ -135,7 +135,7 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-bold text-white text-center mb-8" style={{ fontFamily: '"Nunito", sans-serif', fontSize: '72px' }}>
+          <h2 className="font-bold text-white text-center mb-8" style={{ fontFamily: '"Roboto", sans-serif', fontSize: '72px' }}>
             AM Co-Living PG
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-center border-t border-white/20 pt-8" style={{ fontFamily: '"Inter", sans-serif', color: 'rgba(78, 76, 76, 0.8)' }}>
