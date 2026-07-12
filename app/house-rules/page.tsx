@@ -203,21 +203,41 @@ export default function HouseRulesPage() {
       </section>
 
       {/* Payment Notice Section */}
-      <section className="py-16 md:py-24 bg-red-600">
+      <section className="py-16 md:py-24" style={{ backgroundColor: "#ffb700" }}>
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#f6f0f0", fontFamily: '"Geist", sans-serif' }}>
                 Important Notice!
               </h2>
             </div>
-            <div className="text-white space-y-4">
+            <div className="space-y-4" style={{ color: "#0e0000", fontFamily: '"Geist", sans-serif' }}>
               <p className="leading-relaxed">
                 AM Co-Living PG accepts payments only through the official payment system. Any payment made directly to an employee, agent, or any individual through cash, bank transfer, or any other mode is not valid and will not be considered for booking confirmation.
               </p>
               <p className="leading-relaxed">
                 For your safety and to avoid fraud, please do not make payments to anyone outside the AM Co-Living PG platform. All bookings are confirmed only after payment is successfully completed through the official payment system.
               </p>
+              <div className="flex flex-wrap items-center pt-6" style={{ gap: "32px" }}>
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pngtree-google-pay-payment-icon-vector-png-image_12256719-removebg-preview-HgaSZd90SWwVeb8on0uOlRKaEhf0jz.png"
+                  alt="Google Pay"
+                  className="object-contain"
+                  style={{ borderRadius: "4px", width: "80px", height: "80px" }}
+                />
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/paytm-icon-removebg-preview-CMkvaScc4WjXSx2uulsU5ILd5HUiRg.png"
+                  alt="Paytm"
+                  className="object-contain"
+                  style={{ borderRadius: "4px", width: "80px", height: "80px" }}
+                />
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PhonePe_Logo.svg-removebg-preview-8ECfJhNAoYJn4V2M05rqY8sDc74QsO.png"
+                  alt="PhonePe"
+                  className="object-contain"
+                  style={{ borderRadius: "4px", width: "80px", height: "80px" }}
+                />
+              </div>
             </div>
           </div>
         </div>
