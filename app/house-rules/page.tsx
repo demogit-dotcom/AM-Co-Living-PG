@@ -218,6 +218,23 @@ export default function HouseRulesPage() {
               <p className="leading-relaxed">
                 For your safety and to avoid fraud, please do not make payments to anyone outside the AM Co-Living PG platform. All bookings are confirmed only after payment is successfully completed through the official payment system.
               </p>
+              <div className="flex flex-wrap gap-6 items-center pt-6">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/google-pay-logo-png_seeklogo-393963-removebg-preview-a78Rk5PiHvmd87JFfkmpSIBh4fHZyv.png"
+                  alt="Google Pay"
+                  className="h-12 object-contain"
+                />
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/paytm-icon-removebg-preview-CMkvaScc4WjXSx2uulsU5ILd5HUiRg.png"
+                  alt="Paytm"
+                  className="h-12 object-contain"
+                />
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PhonePe_Logo.svg-removebg-preview-8ECfJhNAoYJn4V2M05rqY8sDc74QsO.png"
+                  alt="PhonePe"
+                  className="h-12 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
