@@ -65,14 +65,14 @@ export default function AboutPage() {
         {/* Hero Section */}
         <section className="py-16 md:py-24 lg:py-32">
           <div className="container-custom">
-            <div className="text-center mb-12 md:mb-16">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(58,58,52)] mb-6" style={{ fontSize: "23px" }}>
+            <div className="text-center mb-12 md:mb-16" style={{ fontFamily: '"Quicksand", sans-serif' }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(58,58,52)] mb-6" style={{ fontSize: "23px", fontFamily: '"Inter", sans-serif' }}>
                 About
               </h1>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f56b35] mb-6" style={{ fontSize: "33px" }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f56b35] mb-6" style={{ fontSize: "33px", fontFamily: '"Geist", sans-serif' }}>
                 AM Co-Living PG
               </h1>
-              <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto" style={{ fontFamily: '"Inter", sans-serif' }}>
                 A Place That Feels Like Home Always!
               </p>
             </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
                   Our Mission
                 </h2>
-                <div className="space-y-6">
+                <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
                   <p className="text-base md:text-lg text-[#120000] leading-relaxed font-sans">
                     At AM Co-Living PG, we believe that a great living experience goes beyond just providing a room. We offer safe, comfortable, and fully furnished accommodation designed to make students and working professionals feel at home from the very first day.
                   </p>
@@ -121,7 +121,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 font-sans">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 font-sans" style={{ fontFamily: '"Geist", sans-serif' }}>
               {features.map((feature) => (
                 <div
                   key={feature.title}
