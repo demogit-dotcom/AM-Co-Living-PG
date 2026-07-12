@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Geist, Roboto, Poppins, Fira_Sans, Rubik } from "next/font/google"
+import { Inter, Geist, Roboto, Poppins, Fira_Sans, Rubik, Nunito, Open_Sans, Playfair_Display, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({
@@ -41,6 +41,34 @@ const rubik = Rubik({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-rubik",
+})
+
+const nunito = Nunito({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-nunito",
+})
+
+const openSans = Open_Sans({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-open-sans",
+})
+
+const playfairDisplay = Playfair_Display({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair-display",
+})
+
+const jetBrainsMono = JetBrains_Mono({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains-mono",
 })
 
 export const metadata: Metadata = {
@@ -86,7 +114,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${geist.variable} ${roboto.variable} ${poppins.variable} ${firaSans.variable} ${rubik.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${geist.variable} ${roboto.variable} ${poppins.variable} ${firaSans.variable} ${rubik.variable} ${nunito.variable} ${openSans.variable} ${playfairDisplay.variable} ${jetBrainsMono.variable} antialiased`}>
       <body className="font-sans bg-neutral-50 text-neutral-900 overflow-x-hidden">{children}</body>
     </html>
   )

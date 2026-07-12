@@ -135,12 +135,13 @@ export function Footer() {
         {/* Brand Statement Section */}
         <motion.div
           className="pt-12 lg:pt-16 border-t border-white/20"
+          style={{ fontFamily: '"Playfair Display", sans-serif' }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-bold text-white text-center mb-8" style={{ fontFamily: '"Roboto", sans-serif', fontSize: '72px' }}>
+          <h2 className="font-bold text-white text-center mb-8" style={{ fontFamily: '"Nunito", sans-serif', fontSize: '72px' }}>
             AM Co-Living PG
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-white/80 text-center border-t border-white/20 pt-8">
