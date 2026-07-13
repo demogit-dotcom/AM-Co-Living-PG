@@ -8,25 +8,25 @@ import Link from "next/link"
 export default function ContactPage() {
   const contactInfo = [
     {
-      icon: "📍",
+      icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%287%29-KQl23x2snDCZxP87gVTphMu5BPZ7cE.png",
       title: "Address",
       content: "AM Co-Living PG, Shivaji maharaj chowk, Phase 1, Hinjawadi, Pune, Maharashtra 411057",
       details: "Centrally located in the heart of the city",
     },
     {
-      icon: "📞",
+      icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%288%29-WfUcq0iGnMpTNKrT7OdwISlgVdez9p.png",
       title: "Phone Number",
       content: "9067372121",
       details: "Available 9:00 AM - 6:00 PM for your inquiries",
     },
     {
-      icon: "📧",
+      icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2810%29-Ivh9AUv9v8VMjijn7y9nd42sJb08Qh.png",
       title: "Email Address",
       content: "info@amcoliving.com",
       details: "We respond within 24 hours",
     },
     {
-      icon: "🕒",
+      icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%289%29-NTUnKxSXSHLV6oDJ16YGU4kL4Tbxt5.png",
       title: "Office Hours",
       content: "9:00 AM - 6:00 PM",
       details: "Monday to Saturday",
@@ -106,7 +106,7 @@ export default function ContactPage() {
               {/* Address */}
               <motion.div className="mb-8" variants={itemVariants}>
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl mt-1">{contactInfo[0].icon}</span>
+                  <img src={contactInfo[0].icon} alt="Address" className="w-10 h-10 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">ADDRESS</h3>
                     <p className="text-lg text-slate-700 mb-2" style={{ fontWeight: "400" }}>{contactInfo[0].content}</p>
@@ -118,7 +118,7 @@ export default function ContactPage() {
               {/* Phone */}
               <motion.div className="mb-8" variants={itemVariants}>
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl mt-1">{contactInfo[1].icon}</span>
+                  <img src={contactInfo[1].icon} alt="Phone" className="w-10 h-10 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">PHONE</h3>
                     <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[1].content}</p>
@@ -130,7 +130,7 @@ export default function ContactPage() {
               {/* Office Hours */}
               <motion.div className="mb-8" variants={itemVariants}>
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl mt-1">{contactInfo[3].icon}</span>
+                  <img src={contactInfo[3].icon} alt="Office Hours" className="w-10 h-10 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">OFFICE HOURS</h3>
                     <p className="text-lg text-slate-700 mb-1" style={{ fontWeight: "400" }}>{contactInfo[3].content}</p>
@@ -142,7 +142,7 @@ export default function ContactPage() {
               {/* Email */}
               <motion.div className="mb-12" variants={itemVariants}>
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl mt-1">{contactInfo[2].icon}</span>
+                  <img src={contactInfo[2].icon} alt="Email" className="w-10 h-10 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">EMAIL</h3>
                     <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[2].content}</p>
@@ -197,7 +197,10 @@ export default function ContactPage() {
                 whileHover={{ borderColor: "#22d200" }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-wider">GET DIRECTIONS</h3>
+                <div className="flex items-center gap-3 mb-3">
+                  <h3 className="text-lg font-bold text-slate-900 uppercase tracking-wider">GET DIRECTIONS</h3>
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2811%29-j7jP8wvrWmQ3UhmDV3dlU7J0etr6oK.png" alt="Directions" className="w-6 h-6" />
+                </div>
                 <p className="text-base text-slate-600 mb-6 leading-relaxed">
                   Click the button below to open our location in Google Maps and get turn-by-turn directions to AM Co-Living PG.
                 </p>
