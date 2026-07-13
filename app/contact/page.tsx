@@ -10,7 +10,7 @@ export default function ContactPage() {
     {
       icon: "📍",
       title: "Address",
-      content: "AM Co-Living PG, ch. shivaji maharaj chowk, Phase 1, Hinjawadi, Pune, Maharashtra 411057",
+      content: "AM Co-Living PG, Shivaji maharaj chowk, Phase 1, Hinjawadi, Pune, Maharashtra 411057",
       details: "Centrally located in the heart of the city",
     },
     {
