@@ -86,44 +86,154 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Information Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8"
+            className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            {contactInfo.map((info, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="group p-6 md:p-8 rounded-xl bg-gradient-to-br from-slate-50 to-white border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-              >
-                <div className="flex flex-col h-full">
-                  <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                    {info.icon}
-                  </div>
-                  <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">
-                    {info.title}
-                  </h3>
-                  <p className="text-base md:text-lg font-medium text-slate-700 mb-2">
-                    {info.content}
-                  </p>
-                  <p className="text-sm text-slate-500 leading-relaxed">
-                    {info.details}
-                  </p>
-                  <div className="flex items-center mt-auto pt-4 border-t border-slate-100">
-                    <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
-                      <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                  </div>
+            {/* Featured Card - Address (spans 2 columns) */}
+            <motion.div
+              variants={itemVariants}
+              className="md:col-span-2 lg:col-span-2 group p-8 md:p-10 rounded-2xl bg-gradient-to-br from-blue-50 via-slate-50 to-white border-2 border-blue-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <div className="text-6xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                  {contactInfo[0].icon}
                 </div>
-              </motion.div>
-            ))}
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
+                  {contactInfo[0].title}
+                </h3>
+                <p className="text-lg md:text-xl font-semibold text-slate-700 mb-3">
+                  {contactInfo[0].content}
+                </p>
+                <p className="text-base text-slate-600 leading-relaxed mb-6 flex-grow">
+                  {contactInfo[0].details}
+                </p>
+                <div className="flex items-center pt-4 border-t-2 border-blue-100">
+                  <span className="inline-flex items-center justify-center h-7 w-7 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
+                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Phone Card */}
+            <motion.div
+              variants={itemVariants}
+              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-rose-50 to-white border-2 border-rose-200 hover:border-rose-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                  {contactInfo[1].icon}
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
+                  {contactInfo[1].title}
+                </h3>
+                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
+                  {contactInfo[1].content}
+                </p>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
+                  {contactInfo[1].details}
+                </p>
+                <div className="flex items-center pt-3 border-t-2 border-rose-100">
+                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Email Card */}
+            <motion.div
+              variants={itemVariants}
+              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                  {contactInfo[2].icon}
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
+                  {contactInfo[2].title}
+                </h3>
+                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
+                  {contactInfo[2].content}
+                </p>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
+                  {contactInfo[2].details}
+                </p>
+                <div className="flex items-center pt-3 border-t-2 border-purple-100">
+                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Office Hours Card */}
+            <motion.div
+              variants={itemVariants}
+              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-amber-50 to-white border-2 border-amber-200 hover:border-amber-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                  {contactInfo[3].icon}
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
+                  {contactInfo[3].title}
+                </h3>
+                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
+                  {contactInfo[3].content}
+                </p>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
+                  {contactInfo[3].details}
+                </p>
+                <div className="flex items-center pt-3 border-t-2 border-amber-100">
+                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Metro Station Card */}
+            <motion.div
+              variants={itemVariants}
+              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-teal-50 to-white border-2 border-teal-200 hover:border-teal-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="flex flex-col h-full">
+                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                  {contactInfo[4].icon}
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
+                  {contactInfo[4].title}
+                </h3>
+                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
+                  {contactInfo[4].content}
+                </p>
+                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
+                  {contactInfo[4].details}
+                </p>
+                <div className="flex items-center pt-3 border-t-2 border-teal-100">
+                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
