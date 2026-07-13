@@ -85,156 +85,133 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Information Section */}
+      {/* Contact Information Section - Two Column Layout */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
-          <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            {/* Featured Card - Address (spans 2 columns) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left Column - Contact Information */}
             <motion.div
-              variants={itemVariants}
-              className="md:col-span-2 lg:col-span-2 group p-8 md:p-10 rounded-2xl bg-gradient-to-br from-blue-50 via-slate-50 to-white border-2 border-blue-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
             >
-              <div className="flex flex-col h-full">
-                <div className="text-6xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                  {contactInfo[0].icon}
-                </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
-                  {contactInfo[0].title}
-                </h3>
-                <p className="text-lg md:text-xl font-semibold text-slate-700 mb-3">
-                  {contactInfo[0].content}
-                </p>
-                <p className="text-base text-slate-600 leading-relaxed mb-6 flex-grow">
-                  {contactInfo[0].details}
-                </p>
-                <div className="flex items-center pt-4 border-t-2 border-blue-100">
-                  <span className="inline-flex items-center justify-center h-7 w-7 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
-                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                </div>
+              <div className="mb-12">
+                <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Get In Touch</p>
+                <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+                  Come experience AM Co-Living
+                </h2>
               </div>
+
+              {/* Address */}
+              <motion.div className="mb-8" variants={itemVariants}>
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl mt-1">{contactInfo[0].icon}</span>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">ADDRESS</h3>
+                    <p className="text-lg text-slate-700 font-semibold mb-2">{contactInfo[0].content}</p>
+                    <p className="text-base text-slate-600">{contactInfo[0].details}</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Phone */}
+              <motion.div className="mb-8" variants={itemVariants}>
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl mt-1">{contactInfo[1].icon}</span>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">PHONE</h3>
+                    <p className="text-lg text-slate-700 font-semibold">{contactInfo[1].content}</p>
+                    <p className="text-base text-slate-600 mt-1">{contactInfo[1].details}</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Office Hours */}
+              <motion.div className="mb-8" variants={itemVariants}>
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl mt-1">{contactInfo[3].icon}</span>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">OFFICE HOURS</h3>
+                    <p className="text-lg text-slate-700 font-semibold mb-1">{contactInfo[3].content}</p>
+                    <p className="text-base text-slate-600">{contactInfo[3].details}</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Email */}
+              <motion.div className="mb-12" variants={itemVariants}>
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl mt-1">{contactInfo[2].icon}</span>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">EMAIL</h3>
+                    <p className="text-lg text-slate-700 font-semibold">{contactInfo[2].content}</p>
+                    <p className="text-base text-slate-600 mt-1">{contactInfo[2].details}</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Quick Contact Buttons */}
+              <motion.div className="bg-slate-50 p-6 rounded-xl" variants={itemVariants}>
+                <h3 className="text-lg font-bold text-slate-900 mb-4 uppercase tracking-wider">QUICK CONTACT</h3>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="tel:+919765230838"
+                    className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all duration-300"
+                  >
+                    <span>CALL NOW</span>
+                  </a>
+                  <a
+                    href="https://wa.me/919765230838"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-300"
+                  >
+                    <span>WHATSAPP</span>
+                  </a>
+                </div>
+              </motion.div>
             </motion.div>
 
-            {/* Phone Card */}
+            {/* Right Column - Image Section */}
             <motion.div
-              variants={itemVariants}
-              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-rose-50 to-white border-2 border-rose-200 hover:border-rose-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
+              className="flex flex-col gap-8"
             >
-              <div className="flex flex-col h-full">
-                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                  {contactInfo[1].icon}
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
-                  {contactInfo[1].title}
-                </h3>
-                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
-                  {contactInfo[1].content}
-                </p>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
-                  {contactInfo[1].details}
-                </p>
-                <div className="flex items-center pt-3 border-t-2 border-rose-100">
-                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                </div>
+              {/* Main Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-96 md:h-96 lg:h-full">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CIaLMIBS2AReRUlywFwNifKPC5PR2f.png"
+                  alt="AM Co-Living PG Bedroom"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20"></div>
               </div>
-            </motion.div>
 
-            {/* Email Card */}
-            <motion.div
-              variants={itemVariants}
-              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
-            >
-              <div className="flex flex-col h-full">
-                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                  {contactInfo[2].icon}
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
-                  {contactInfo[2].title}
-                </h3>
-                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
-                  {contactInfo[2].content}
+              {/* Bottom Box - Directions */}
+              <motion.div
+                className="bg-slate-50 p-8 rounded-2xl border-2 border-slate-200"
+                whileHover={{ borderColor: "#22d200" }}
+                transition={{ duration: 0.3 }}
+              >
+                <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-wider">GET DIRECTIONS</h3>
+                <p className="text-base text-slate-600 mb-6 leading-relaxed">
+                  Click the button below to open our location in Google Maps and get turn-by-turn directions to AM Co-Living PG.
                 </p>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
-                  {contactInfo[2].details}
-                </p>
-                <div className="flex items-center pt-3 border-t-2 border-purple-100">
-                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all duration-300"
+                >
+                  OPEN IN GOOGLE MAPS
+                </a>
+              </motion.div>
             </motion.div>
-
-            {/* Office Hours Card */}
-            <motion.div
-              variants={itemVariants}
-              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-amber-50 to-white border-2 border-amber-200 hover:border-amber-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
-            >
-              <div className="flex flex-col h-full">
-                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                  {contactInfo[3].icon}
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
-                  {contactInfo[3].title}
-                </h3>
-                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
-                  {contactInfo[3].content}
-                </p>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
-                  {contactInfo[3].details}
-                </p>
-                <div className="flex items-center pt-3 border-t-2 border-amber-100">
-                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Metro Station Card */}
-            <motion.div
-              variants={itemVariants}
-              className="group p-7 md:p-8 rounded-2xl bg-gradient-to-br from-teal-50 to-white border-2 border-teal-200 hover:border-teal-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"
-            >
-              <div className="flex flex-col h-full">
-                <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                  {contactInfo[4].icon}
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-2">
-                  {contactInfo[4].title}
-                </h3>
-                <p className="text-base md:text-lg font-semibold text-slate-700 mb-2">
-                  {contactInfo[4].content}
-                </p>
-                <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-grow">
-                  {contactInfo[4].details}
-                </p>
-                <div className="flex items-center pt-3 border-t-2 border-teal-100">
-                  <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-green-500/10" style={{ color: "#22d200" }}>
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
