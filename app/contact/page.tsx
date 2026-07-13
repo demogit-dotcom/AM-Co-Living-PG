@@ -17,7 +17,7 @@ export default function ContactPage() {
       icon: "📞",
       title: "Phone Number",
       content: "+91-XXXXXXXXXX",
-      details: "Available 24/7 for your inquiries",
+      details: "Available 9:00 AM - 6:00 PM for your inquiries",
     },
     {
       icon: "📧",
@@ -67,7 +67,7 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20" style={{ backgroundColor: "#ffce0d" }}>
         <div className="container-custom">
           <motion.div
             className="max-w-3xl"
@@ -75,11 +75,11 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight" style={{ color: "#000000", fontWeight: "400" }}>
               Contact Us
             </h1>
-            <p className="text-lg md:text-xl text-slate-200 leading-relaxed">
-              We&apos;re here to help. Get in touch with us for room availability, bookings, or any questions about AM Co-Living.
+            <p className="text-lg md:text-xl leading-relaxed" style={{ color: "#222426" }}>
+              We&apos;re here to help. Get in touch with us for room availability, bookings, or any questions about AM Co-Living Spaces.
             </p>
           </motion.div>
         </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
             >
               <div className="mb-12">
                 <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Get In Touch</p>
-                <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+                <h2 className="text-3xl md:text-4xl text-slate-900 leading-tight" style={{ fontWeight: "400" }}>
                   Come experience AM Co-Living
                 </h2>
               </div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl text-slate-900 mb-6" style={{ fontWeight: "400" }}>
               Ready to Move In?
             </h2>
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
@@ -237,7 +237,8 @@ export default function ContactPage() {
             >
               <Link
                 href="/bookings"
-                className="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-4 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
+                style={{ background: "linear-gradient(to right in oklab, rgb(255, 125, 0) 0%, rgb(255, 140, 20) 100%)", fontFamily: '"DM Sans", sans-serif' }}
               >
                 Book Your Stay
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
