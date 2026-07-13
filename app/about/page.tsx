@@ -9,7 +9,8 @@ export const metadata = {
 
 interface Feature {
   title: string
-  iconUrl: string
+  iconUrl?: string
+  icon?: string
   description: string
 }
 
@@ -47,12 +48,12 @@ export default function AboutPage() {
     },
     {
       title: "Clean & Hygienic Living Spaces",
-      iconUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%283%29-b0i9wdodK9SjeWUYfk7820D01LZo8S.png",
+      icon: "✨",
       description: "Spotless rooms and common areas"
     },
     {
       title: "Friendly & Responsive Management",
-      iconUrl: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%284%29-El8bvR0jBcFHEElamJxJsTWEG62zlf.png",
+      icon: "👥",
       description: "Always available to help and support"
     },
   ]
@@ -129,8 +130,14 @@ export default function AboutPage() {
                 >
                   <div className="flex flex-col h-full">
                     <div className="mb-4">
-                      <div className="mb-3 transform group-hover:scale-110 transition-transform duration-300 w-12 h-12">
-                        <img src={feature.iconUrl} alt={feature.title} className="w-full h-full object-contain" />
+                      <div className="mb-3 transform group-hover:scale-110 transition-transform duration-300">
+                        {feature.iconUrl ? (
+                          <div className="w-12 h-12">
+                            <img src={feature.iconUrl} alt={feature.title} className="w-full h-full object-contain" />
+                          </div>
+                        ) : (
+                          <div style={{ fontSize: "30px" }}>{feature.icon}</div>
+                        )}
                       </div>
                       <h3 className="font-semibold text-neutral-900 leading-snug mb-2" style={{ fontSize: "16px" }}>
                         {feature.title}
