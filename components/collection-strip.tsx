@@ -87,7 +87,7 @@ export function CollectionStrip() {
       <div className="mb-12">
         <Reveal>
           <div className="container-custom text-center">
-            <h2 className="text-neutral-900 mb-4 text-3xl md:text-4xl lg:text-5xl font-normal">Explore Our Rooms</h2>
+            <h2 className="text-neutral-900 mb-4 text-3xl md:text-4xl lg:text-5xl font-normal">Explore Our Amenties</h2>
             <p className="text-base text-neutral-600 max-w-2xl mx-auto">
               Choose from a range of clean, spacious, and well-equipped rooms tailored for students and working professionals.
             </p>
