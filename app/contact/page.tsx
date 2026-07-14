@@ -118,7 +118,7 @@ export default function ContactPage() {
               {/* Phone */}
               <motion.div className="mb-8" variants={itemVariants}>
                 <div className="flex items-start gap-4">
-                  <img src={contactInfo[1].icon} alt="Phone" className="w-10 h-10 flex-shrink-0 mt-1" />
+                  <img src={contactInfo[1].icon} alt="Phone" className="w-6 h-6 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">PHONE</h3>
                     <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[1].content}</p>
