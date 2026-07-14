@@ -14,7 +14,7 @@ export default function ContactPage() {
       details: "Centrally located in the heart of the city",
     },
     {
-      icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%288%29-4V3nbmmhhCAeqMmJIRwW9KDW4yQDVT.png",
+      icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2813%29-XnT82mcmyVvuKYU2KhpMXiYP4fpeCe.png",
       title: "Phone Number",
       content: "9067372121",
       details: "Available 9:00 AM - 6:00 PM for your inquiries",
@@ -238,8 +238,8 @@ export default function ContactPage() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link
-                href="/bookings"
+              <a
+                href="tel:9067372121"
                 className="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-4 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
                 style={{ background: "linear-gradient(to right in oklab, rgb(255, 125, 0) 0%, rgb(255, 140, 20) 100%)", fontFamily: '"DM Sans", sans-serif' }}
               >
@@ -247,7 +247,7 @@ export default function ContactPage() {
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
         </div>
