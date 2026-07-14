@@ -12,12 +12,16 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
   {
+    question: "Is food included in the stay?",
+    answer: "Yes. We provide nutritious, home-style meals to all residents. Freshly prepared breakfast, lunch, and dinner are served according to the scheduled meal timings.",
+  },
+  {
     question: "In which cities do you provide accommodation?",
-    answer: "Currently, we are available only in Pune, but we will soon expand to other cities",
+    answer: "Currently, we are available only in Hinjewadi (multiple areas) Pune city, but we will soon expand to other cities",
   },
   {
     question: "What is the lease term and deposit requirement?",
-    answer: "Standard lease terms are 6 or 12 months, with flexible options available. A security deposit of one month's rent is required, along with the first month's rent to be paid before check-in.",
+    answer: "Standard lease terms are 3 or 6 months, with flexible options available. A security deposit of one month's rent is required, along with the first month's rent to be paid before check-in.",
   },
   {
     question: "Are utilities included in the rent?",
@@ -25,7 +29,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "What is the house policy regarding guests?",
-    answer: "Guests are allowed in common areas during designated hours. Overnight guests require 24-hour advance notice to the management. All guests must adhere to house rules and maintain noise discipline.",
+    answer: "Guests are permitted to visit only their respective resident's room during visiting hours. Visiting hours are from 10:00 AM to 6:00 PM. Overnight stays are strictly prohibited unless approved by the management, and additional charges may apply. All guests are expected to follow the house rules and maintain a peaceful environment.",
   },
   {
     question: "How is maintenance and repairs handled?",
