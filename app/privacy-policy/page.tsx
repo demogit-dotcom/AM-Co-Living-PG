@@ -1,11 +1,8 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
-
-export const metadata = {
-  title: "Privacy Policy | AM Co-Living PG",
-  description: "Read our Privacy Policy to understand how AM Co-Living PG collects, uses, and protects your personal information.",
-}
 
 export default function PrivacyPolicyPage() {
   const containerVariants = {
