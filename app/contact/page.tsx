@@ -99,7 +99,7 @@ export default function ContactPage() {
               <div className="mb-12">
                 <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">Get In Touch</p>
                 <h2 className="text-3xl md:text-4xl text-slate-900 leading-tight" style={{ fontWeight: "400" }}>
-                  Come experience AM Co-Living
+                  Come experience AM Co-Living spaces
                 </h2>
               </div>
 
