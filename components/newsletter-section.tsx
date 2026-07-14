@@ -12,8 +12,8 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
   {
-    question: "What facilities are included in the room?",
-    answer: "All our rooms come fully furnished with a bed, wardrobe, study table, chair, and bedding. Common areas include a kitchen, laundry facility, and recreational space. High-speed WiFi is available throughout the property.",
+    question: "In which cities do you provide accommodation?",
+    answer: "Currently, we are available only in Pune, but we will soon expand to other cities",
   },
   {
     question: "What is the lease term and deposit requirement?",
