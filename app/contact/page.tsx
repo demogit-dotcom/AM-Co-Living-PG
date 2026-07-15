@@ -105,8 +105,8 @@ export default function ContactPage() {
 
               {/* Address */}
               <motion.div className="mb-8" variants={itemVariants}>
-                <div className="flex items-start gap-4">
-                  <img src={contactInfo[0].icon} alt="Address" className="w-10 h-10 flex-shrink-0 mt-1" />
+                <div className="flex items-center gap-4">
+                  <img src={contactInfo[0].icon} alt="Address" className="w-8 h-8 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">ADDRESS</h3>
                     <p className="text-lg text-slate-700 mb-2" style={{ fontWeight: "400" }}>{contactInfo[0].content}</p>
@@ -117,8 +117,8 @@ export default function ContactPage() {
 
               {/* Phone */}
               <motion.div className="mb-8" variants={itemVariants}>
-                <div className="flex items-start gap-4">
-                  <img src={contactInfo[1].icon} alt="Phone" className="w-6 h-6 flex-shrink-0 mt-1" />
+                <div className="flex items-center gap-4">
+                  <img src={contactInfo[1].icon} alt="Phone" className="w-8 h-8 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">PHONE</h3>
                     <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[1].content}</p>
@@ -129,8 +129,8 @@ export default function ContactPage() {
 
               {/* Office Hours */}
               <motion.div className="mb-8" variants={itemVariants}>
-                <div className="flex items-start gap-4">
-                  <img src={contactInfo[3].icon} alt="Office Hours" className="w-10 h-10 flex-shrink-0 mt-1" />
+                <div className="flex items-center gap-4">
+                  <img src={contactInfo[3].icon} alt="Office Hours" className="w-8 h-8 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">OFFICE HOURS</h3>
                     <p className="text-lg text-slate-700 mb-1" style={{ fontWeight: "400" }}>{contactInfo[3].content}</p>
@@ -141,8 +141,8 @@ export default function ContactPage() {
 
               {/* Email */}
               <motion.div className="mb-12" variants={itemVariants}>
-                <div className="flex items-start gap-4">
-                  <img src={contactInfo[2].icon} alt="Email" className="w-10 h-10 flex-shrink-0 mt-1" />
+                <div className="flex items-center gap-4">
+                  <img src={contactInfo[2].icon} alt="Email" className="w-8 h-8 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">EMAIL</h3>
                     <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[2].content}</p>
