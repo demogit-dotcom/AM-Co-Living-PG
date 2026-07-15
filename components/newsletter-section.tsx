@@ -37,7 +37,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "What are the check-in and check-out procedures?",
-    answer: "Check-in is available from 2 PM onwards with a property walk-through. Check-out must be completed by 10 AM on your last day. Your security deposit will be refunded within 7 days after final inspection.",
+    answer: "Check-in is available from 2 PM onwards with a property walk-through. Check-out must be completed by 10 AM on your last day. Your security deposit will be refunded within 3 days after final inspection.",
   },
 ]
 
@@ -110,7 +110,7 @@ export function NewsletterSection() {
             >
               <p className="text-neutral-600 mb-4">Still have questions?</p>
               <a
-                href="mailto:contact@amcoliving.com"
+                href="tel:9067372121"
                 className="inline-block px-8 py-3 bg-neutral-900 text-white rounded-full font-medium hover:bg-neutral-800 transition-colors"
               >
                 Get in Touch
