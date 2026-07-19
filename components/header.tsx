@@ -47,9 +47,10 @@ export function Header() {
             <Link
               href="/"
               className={cn(
-                "text-base md:text-lg lg:text-xl font-semibold tracking-tight transition-colors",
+                "text-base md:text-lg lg:text-xl tracking-tight transition-colors",
                 isScrolled ? "text-neutral-900 hover:text-neutral-700" : "text-white hover:text-white/80",
               )}
+              style={{ fontFamily: '"Inter", sans-serif', fontWeight: '500' }}
               aria-label="AM Co-Living PG Home"
             >
               AM Co-Living PG
