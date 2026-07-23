@@ -70,7 +70,7 @@ export default function AboutPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(58,58,52)] mb-6" style={{ fontSize: "23px", fontFamily: '"Inter", sans-serif' }}>
                 About
               </h1>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(242,112,59)] mb-6" style={{ fontSize: "48px", fontFamily: '"Roboto", sans-serif' }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(242,112,59)] mb-6" style={{ fontSize: "50px", fontFamily: '"Roboto", sans-serif' }}>
                 AM Co-Living
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto" style={{ fontFamily: '"Inter", sans-serif' }}>
@@ -89,10 +89,10 @@ export default function AboutPage() {
                   Our Mission
                 </h2>
                 <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
-                  <p className="text-base md:text-lg text-[#120000] leading-relaxed font-sans text-justify" style={{ fontSize: "19px" }}>
+                  <p className="text-base md:text-lg text-[#120000] leading-relaxed font-sans text-justify" style={{ fontSize: "18px" }}>
                     At AM Co-Living PG, we believe that a great living experience goes beyond just providing a room. We offer safe, comfortable, and fully furnished accommodation designed to make students and working professionals feel at home from the very first day.
                   </p>
-                  <p className="text-base md:text-lg text-black leading-relaxed font-sans text-justify" style={{ fontSize: "19px" }}>
+                  <p className="text-base md:text-lg text-black leading-relaxed font-sans text-justify" style={{ fontSize: "18px" }}>
                     Our thoughtfully designed spaces combine modern amenities with a welcoming community, creating the perfect environment to live, work, study, and relax. Whether you're relocating for education or your career, we ensure a hassle-free stay with everything you need under one roof.
                   </p>
                 </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                           <div style={{ fontSize: "30px" }}>{feature.icon}</div>
                         )}
                       </div>
-                      <h3 className="font-semibold text-neutral-900 leading-snug mb-2" style={{ fontSize: "18px" }}>
+                      <h3 className="font-medium text-neutral-900 leading-snug mb-2" style={{ fontSize: "18px" }}>
                         {feature.title}
                       </h3>
                       <p className="text-neutral-600 leading-relaxed" style={{ fontSize: "18px" }}>
