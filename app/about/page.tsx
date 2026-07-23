@@ -117,7 +117,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-4">
                 Why Choose AM Co-Living?
               </h2>
-              <p className="text-base md:text-lg max-w-7xl mx-auto font-geist text-justify" style={{ color: "#1d1b1c" }}>
+              <p className="text-base md:text-lg max-w-7xl mx-auto font-geist text-justify" style={{ color: "#1d1b1c", fontSize: "18px" }}>
                 Keeping this dynamic situation in mind, many students and white collared professionals flock to Pune in search of various opportunities. This further takes them to choose Paying Guests as an economical option of living. Shared living space or coliving space is the modern form of living where fellow mates are offered a host of living alternatives to choose from. With a host of facilities alongside, these spaces are focusing on features like advantages like flexibility, affordability and a sense of unity.
               </p>
             </div>
