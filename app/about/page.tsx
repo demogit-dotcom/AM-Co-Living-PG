@@ -89,10 +89,10 @@ export default function AboutPage() {
                   Our Mission
                 </h2>
                 <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
-                  <p className="text-base md:text-lg leading-relaxed font-sans text-justify" style={{ fontSize: "18px", color: "rgb(29, 27, 28)", fontFamily: '"Geist", sans-serif' }}>
+                  <p className="text-base md:text-lg leading-relaxed font-sans text-left" style={{ fontSize: "18px", color: "rgb(29, 27, 28)", fontFamily: '"Geist", sans-serif' }}>
                     At AM Co-Living PG, we believe that a great living experience goes beyond just providing a room. We offer safe, comfortable, and fully furnished accommodation designed to make students and working professionals feel at home from the very first day.
                   </p>
-                  <p className="text-base md:text-lg leading-relaxed font-sans text-justify" style={{ fontSize: "18px", color: "rgb(29, 27, 28)", fontFamily: '"Geist", sans-serif' }}>
+                  <p className="text-base md:text-lg leading-relaxed font-sans text-left" style={{ fontSize: "18px", color: "rgb(29, 27, 28)", fontFamily: '"Geist", sans-serif' }}>
                     Our thoughtfully designed spaces combine modern amenities with a welcoming community, creating the perfect environment to live, work, study, and relax. Whether you're relocating for education or your career, we ensure a hassle-free stay with everything you need under one roof.
                   </p>
                 </div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-4">
                 Why Choose AM Co-Living?
               </h2>
-              <p className="text-base md:text-lg max-w-7xl mx-auto font-geist text-justify" style={{ color: "#1d1b1c" }}>
+              <p className="text-base md:text-lg max-w-7xl mx-auto font-geist text-justify" style={{ color: "#1d1b1c", fontSize: "18px" }}>
                 Keeping this dynamic situation in mind, many students and white collared professionals flock to Pune in search of various opportunities. This further takes them to choose Paying Guests as an economical option of living. Shared living space or coliving space is the modern form of living where fellow mates are offered a host of living alternatives to choose from. With a host of facilities alongside, these spaces are focusing on features like advantages like flexibility, affordability and a sense of unity.
               </p>
             </div>
