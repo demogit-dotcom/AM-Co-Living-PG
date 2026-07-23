@@ -64,7 +64,7 @@ export default function AboutPage() {
 
       <main className="min-h-screen bg-white pt-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-10 lg:py-22">
+        <section className="py-16 md:py-10 lg:py-22" style={{ paddingTop: "108px", paddingBottom: "8px" }}>
           <div className="container-custom">
             <div className="text-center mb-12 md:mb-16" style={{ fontFamily: '"Quicksand", sans-serif' }}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(58,58,52)] mb-6" style={{ fontSize: "23px", fontFamily: '"Inter", sans-serif' }}>
@@ -89,10 +89,10 @@ export default function AboutPage() {
                   Our Mission
                 </h2>
                 <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
-                  <p className="text-base md:text-lg leading-relaxed font-sans text-justify" style={{ fontSize: "18px", color: "rgb(29, 27, 28)" }}>
+                  <p className="text-base md:text-lg leading-relaxed font-sans text-justify" style={{ fontSize: "18px", color: "rgb(29, 27, 28)", fontFamily: '"Geist", sans-serif' }}>
                     At AM Co-Living PG, we believe that a great living experience goes beyond just providing a room. We offer safe, comfortable, and fully furnished accommodation designed to make students and working professionals feel at home from the very first day.
                   </p>
-                  <p className="text-base md:text-lg leading-relaxed font-sans text-justify" style={{ fontSize: "18px", color: "rgb(29, 27, 28)" }}>
+                  <p className="text-base md:text-lg leading-relaxed font-sans text-justify" style={{ fontSize: "18px", color: "rgb(29, 27, 28)", fontFamily: '"Geist", sans-serif' }}>
                     Our thoughtfully designed spaces combine modern amenities with a welcoming community, creating the perfect environment to live, work, study, and relax. Whether you're relocating for education or your career, we ensure a hassle-free stay with everything you need under one roof.
                   </p>
                 </div>
@@ -161,13 +161,13 @@ export default function AboutPage() {
         </section>
 
         {/* Community Section */}
-        <section className="py-16 md:py-24 lg:py-32 bg-neutral-50">
+        <section className="py-16 md:py-24 lg:py-32 bg-neutral-50" style={{ paddingTop: "60px", paddingBottom: "60px" }}>
           <div className="container-custom">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
                 A Community You'll Love ❤️
               </h2>
-              <p className="text-base md:text-lg leading-relaxed text-justify font-sans" style={{ color: "#210513" }}>
+              <p className="text-base md:text-lg leading-relaxed text-justify font-sans" style={{ color: "rgb(29, 27, 28)" }}>
                 More than just a PG, AM Co-Living is a place where friendships grow, opportunities begin, and every resident enjoys a comfortable lifestyle with modern facilities and a supportive environment. We're dedicated to creating a space where you can truly belong.
               </p>
             </div>
