@@ -122,7 +122,7 @@ export default function HouseRulesPage() {
       <section className="pt-24 md:pt-32 pb-12 md:pb-16 bg-gradient-to-b from-neutral-50 to-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f2703b] mb-6" style={{ fontSize: "36px", fontFamily: '"Geist", sans-serif' }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f2703b] mb-6" style={{ fontSize: "48px", fontFamily: '"Roboto", sans-serif' }}>
               House Rules
             </h1>
             <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -256,11 +256,11 @@ export default function HouseRulesPage() {
       {/* Closing Section */}
       <section className="py-16 md:py-24 bg-neutral-50">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 mb-6">
               Thank You for Being Part of Our Community
             </h2>
-            <p className="text-base md:text-lg text-black leading-relaxed text-justify font-sans" style={{ fontFamily: '"Inter", sans-serif' }}>
+            <p className="text-base md:text-lg leading-relaxed text-justify font-sans" style={{ fontFamily: '"Inter", sans-serif', color: '#2a2829' }}>
               We appreciate your co-operation in helping us maintain a safe, clean, secure, and welcoming community for everyone. These house rules are designed to ensure that all residents enjoy a comfortable and harmonious living experience. Together, let's make AM Co-Living PG a place you'll truly enjoy calling home.
             </p>
           </div>
