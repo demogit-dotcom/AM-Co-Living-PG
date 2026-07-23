@@ -71,7 +71,7 @@ export default function AboutPage() {
                 About
               </h1>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f56b35] mb-6" style={{ fontSize: "48px", fontFamily: '"Roboto", sans-serif' }}>
-                AM Co-Living PG
+                AM Co-Living
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto" style={{ fontFamily: '"Inter", sans-serif' }}>
                 A Place That Feels Like Home Always!
