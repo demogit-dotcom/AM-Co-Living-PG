@@ -19,7 +19,7 @@ export function Footer() {
           <h2 className="font-bold text-white text-center mb-8" style={{ fontFamily: '"Roboto", sans-serif', fontSize: '72px' }}>
             AM Co-Living PG
           </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-center border-t border-white/20" style={{ paddingTop: "12px", fontFamily: '"Inter", sans-serif', color: 'rgba(78, 76, 76, 0.8)' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-center border-t border-white/20" style={{ paddingTop: "12px", paddingBottom: "22px", fontFamily: '"Inter", sans-serif', color: 'rgba(78, 76, 76, 0.8)' }}>
             <p style={{ color: 'rgba(11, 11, 10, 0.8)' }}>&copy; {currentYear} AM Co-Living PG. All rights reserved.</p>
             <div className="flex space-x-6">
               <a href="/privacy-policy" className="transition-colors hover:text-[rgb(255,125,0)]" style={{ color: '#5b4c4c' }}>

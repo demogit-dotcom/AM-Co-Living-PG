@@ -67,7 +67,7 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20" style={{ backgroundColor: "#ffce0d" }}>
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20" style={{ backgroundColor: "#ffce0d", paddingTop: "100px" }}>
         <div className="container-custom">
           <motion.div
             className="max-w-3xl"
@@ -153,7 +153,7 @@ export default function ContactPage() {
 
               {/* Quick Contact Buttons */}
               <motion.div className="bg-slate-50 p-6 rounded-xl" variants={itemVariants}>
-                <h3 className="text-lg font-bold text-slate-900 mb-4 uppercase tracking-wider">QUICK CONTACT</h3>
+                <h3 className="text-lg font-bold text-slate-900 mb-4 capitalize tracking-wider">Quick Contact</h3>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="tel:9067372121"
